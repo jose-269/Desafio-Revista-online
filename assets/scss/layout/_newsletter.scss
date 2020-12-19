@@ -1,0 +1,68 @@
+.newsletter {
+    width: 100%;
+    background-color: $light-white;
+    text-align: center;
+    padding: 1rem ;
+
+    h2, p {
+      margin-bottom: .5rem;  
+    }
+
+    &__group input, &__group button {
+    display: inline-block;
+    border-width: 0;
+    font-size: $small;
+    
+    }
+
+    &__group button {
+    background-color: $coral;
+    color: $white;
+    }
+
+
+  
+}
+
+.newsletter h2 {
+    font-size: 20px;
+}
+
+.newsletter p {
+  font-size: 12px;
+}
+
+
+//mobile sm devices
+@media (min-width: 576px){
+  .newsletter  {
+    h2, p {
+      margin-bottom: 1rem;
+    }
+
+    &__group input {
+      width: 65%;
+    }
+
+    &__group input, &__group button{
+      padding: 0.3125rem 0.625rem;
+    }
+  }
+
+  .newsletter h2 {
+    font-size: $x-large;
+  }
+
+  .newsletter p {
+    font-size: $small;
+  }
+}
+
+//Tablets devices
+@media (min-width: 768px){
+  .newsletter__group input {
+    width: 35%;
+  }
+}
+
+

@@ -1,0 +1,110 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid $grey;
+
+    &__logo {
+        font-size: $medium;
+        font-weight: $bold;
+        text-transform: uppercase;
+               
+    }
+
+    &__list {
+           
+        font-size: $small;
+        font-weight: $bold;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+        }       
+    }
+
+    &__list li {
+        display: inline-block;
+        list-style: none;
+        
+    }
+        
+}
+
+    .input-menu {
+         border-radius: 1.875rem;
+         width: 120px;
+         border-style: solid;
+    }
+
+   
+    //mobil xs
+    @media (min-width: 320px) {
+        .nav {
+            margin: 0 .5rem;
+
+            &__list{
+                li:nth-child(2){
+                    display: none;
+            }
+            }
+        
+        } 
+     }
+
+     //mobil sm
+     @media (min-width: 576px){
+         .nav {
+             padding: 1rem 1.2rem;
+
+                     
+            &__list {
+                li:nth-child(2){
+            display: inline-block;
+                }
+            } 
+        }
+    }
+
+    //tablets 
+    @media (min-width: 768px){
+        .nav {
+            padding: 1rem 1.5rem;
+
+            &__logo {
+                font-size: $x-large;
+               
+            }
+
+            .input-menu {
+                width: 100%;
+            }
+        }
+
+    }
+
+    //large devices
+    @media (min-width: 992px){
+        .nav {
+            padding: 1.5rem 2.5rem 1.5rem 1rem;
+                        
+        }
+    }
+
+    //Extra large devices 
+    @media (min-width:1200px){
+        .nav {
+            padding: 1.5rem 4.5rem 1.5rem 1rem;
+            
+        }
+    }
+
+    //my device 
+    @media (min-width:1366px){
+        .nav {
+            padding: 1.5rem 5.5rem 1.5rem 2rem;
+
+            
+        }
+    }
+    
+

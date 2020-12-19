@@ -1,0 +1,261 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem .5rem;
+    
+    .item-1 {
+        grid-column: span 1 ;
+                     
+    }
+
+    .item-2 {
+        grid-column: span 1;
+                
+    }
+}
+
+.main__sub {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: fit-content; 
+    row-gap: 2rem; 
+    
+           
+    .item__inner {
+        
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+            padding-bottom: .5rem;
+        }
+
+        &__title {
+            padding-bottom: .5rem;
+            font-size: 1.2rem;
+        }
+    }
+    
+}
+
+//sm mobile devices
+@media (min-width: 576px) {
+    
+    .main__sub {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: fit-content;
+        padding: 0 1.3rem;
+        column-gap: 1.5rem; 
+        row-gap: 1.5rem; 
+        
+               
+        .item__inner {
+            
+            width: 100%;
+    
+            img {
+                width: 100%;
+                height: auto;
+                padding-bottom: .5rem;
+            }
+    
+            &__title {
+                padding-bottom: .5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+//tablets
+@media (min-width: 768px) {
+    .main {
+        margin-bottom: 2rem;
+    }
+    .main__sub {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: fit-content;
+        padding: 0 1.3rem;
+        column-gap: 1.5rem; 
+        row-gap: 1.5rem; 
+        
+               
+        .item__inner {
+            
+            width: 100%;
+                
+            img {
+                width: 100%;
+                height: auto;
+                padding-bottom: .5rem;
+            }
+    
+            &__title {
+                padding-bottom: .5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+
+//large devices
+@media (min-width: 992px){
+    .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 0;
+        margin: 2rem 3rem 2rem 5rem;
+        
+        
+    
+        .item-1 {
+            grid-column: span 4 ;
+            
+        }
+    
+        .item-2 {
+            grid-column: span 1;
+            margin-left: 0rem;
+            
+        }
+    }  
+
+    .main__sub {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: fit-content; 
+        row-gap: 2rem; 
+        padding: 0 1rem 0 0;
+        
+
+               
+        .item__inner {
+            
+            width: 100%;
+                
+            img {
+                width: 100%;
+                height: auto;
+                padding-bottom: .5rem;
+            }
+    
+            &__title {
+                padding-bottom: .5rem;
+                font-size: 1.2rem;
+            }
+        }
+        
+    }
+    
+
+}
+
+//Extra large devices
+@media (min-width: 1200px){
+    .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 0;
+        margin: 2rem 5rem 2rem 5rem;
+        
+        
+    
+        .item-1 {
+            grid-column: span 4 ;
+            
+        }
+    
+        .item-2 {
+            grid-column: span 1;
+            margin-left: 0rem;
+            
+        }
+    }  
+
+    .main__sub {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: fit-content; 
+        row-gap: 2rem; 
+        padding: 0 1rem 0 0;
+        width: 98%;
+        
+
+               
+        .item__inner {
+            
+            width: 100%;
+                
+            img {
+                width: 100%;
+                height: auto;
+                padding-bottom: .5rem;
+            }
+    
+            &__title {
+                padding-bottom: .5rem;
+                font-size: 1.2rem;
+            }
+        }
+        
+    }
+    
+
+}
+
+//My device 
+@media (min-width: 1366px){
+    .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 0;
+        margin: 2rem 6.2rem 2rem 6rem;
+        
+        
+    
+        .item-1 {
+            grid-column: span 4 ;
+            
+        }
+    
+        .item-2 {
+            grid-column: span 1;
+            margin-left: 0rem;
+            
+        }
+    }  
+
+    .main__sub {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: fit-content; 
+        row-gap: 2rem; 
+        padding: 0 1rem 0 0;
+        
+
+               
+        .item__inner {
+            
+            width: 100%;
+                
+            img {
+                width: 100%;
+                height: auto;
+                padding-bottom: .5rem;
+            }
+    
+            &__title {
+                padding-bottom: .5rem;
+                font-size: 1.2rem;
+            }
+        }
+        
+    }
+    
+
+}

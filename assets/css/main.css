@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, a, p, ul, li span, nav, aside, main, footer, div {
+  margin: 0;
+  padding: 0;
+}
+
+body, body * {
+  font-family: "Roboto Mono", monospace;
+}
+
+.nav {
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+.nav__logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.nav__list {
+  display: inline-block;
+  float: right;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+}
+.nav__list li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 0.7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.input-menu {
+  border-radius: 30px;
+  border-style: solid;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.newsletter {
+  width: 100%;
+  background-color: #f2f4f5;
+  text-align: center;
+  padding: 1.9rem;
+}
+.newsletter h2, .newsletter p {
+  margin-bottom: 1rem;
+}
+.newsletter__group input, .newsletter__group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 0.3125rem 0.625rem;
+}
+.newsletter__group button {
+  background-color: coral;
+  color: #fff;
+}
+
+.newsletter h2 {
+  font-size: 24px;
+}
+
+.main {
+  display: grid;
+  margin: 2em 6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.main .item-1 {
+  grid-column: span 4;
+  border: 1px solid red;
+  margin-right: 0em;
+}
+.main .item-2 {
+  border: 1px solid red;
+}
+
+.main__sub {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+}
+.main__sub .item__inner {
+  border: 1px solid gold;
+  width: 270px;
+}
+.main__sub .item__inner img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 0.5em;
+}
+.main__sub .item__inner__title {
+  padding-bottom: 0.5em;
+}
+
+.main__list .item img {
+  width: 100%;
+  height: auto;
+}
+.main__list__title {
+  padding-bottom: 0.5em;
+}
+.main__list__paragraph {
+  padding-bottom: 0.5em;
+}
+
+.tags ul {
+  list-style: none;
+}
+.tags ul li {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=main.css.map */
